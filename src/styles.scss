@@ -1,1 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+html{
+    font-size: 15px;
+}
+
+button,button:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 400 !important;
+}
+
+.form-group{
+    margin-bottom: 1rem;
+}
+
+
+section.wrapper {
+    background: #404443;
+    width: 100%;
+    padding: 25px;
+    display: block;
+    height: calc(100vh - 65px);
+}
+
+
+/********Modal Code*********/
+
+.modal-content {border: none !important;border-radius: 0 !important;}
+
+.modal-content .modal-header {padding: 14px 3rem;padding-top: 35px;position: relative;border: none;}
+
+.modal-content .modal-header h5 {font-size: 32px;color: #404443;}
+
+.modal-content .modal-header button.btn-close {position: absolute;right: 20px;top: 20px;}
+
+.modal-content .modal-body {padding: 0 3rem;}
+
+.modal-content .modal-body input.form-control {border-radius: 3px;height: 42px;box-shadow: none;outline: none;}
+
+.modal-content .modal-body ul {padding: 0;list-style: none;display: flex;column-gap: 25px;}
+
+.modal-content .modal-body ul li {display: flex;align-items: center;column-gap: 4px;padding-left: 25px;position: relative;}
+
+.modal-content .modal-body ul li span {width: 15px;height: 15px;box-shadow: 0 0 0 1px #a9aeb3;border-radius: 50px;position: absolute;left: 0;}
+
+.modal-content .modal-body ul li input {position: absolute;left: 0;top: 0;bottom: 0;margin: auto;width: 16px;height: 16px;opacity: 0;z-index: 10;cursor: pointer;}
+
+.modal-content .modal-body ul li span:after {content: '';width: 9px;height: 9px;position: absolute;left: 0;right: 0;margin: auto;border-radius: 15px;top: 0;bottom: 0;background: #ffffff;}
+
+.modal-content .modal-body ul li input[type="radio"]:checked + span:after {background: #FFAF2A;}
+
+.modal-content .modal-body ul li input[type="radio"]:checked + span {box-shadow: 0 0 0 1px #ffaf2a;}
+
+.modal-footer {padding: 10px 0 45px !important;border: none !important;margin: 0;}
+
+.modal-footer button {width: 82%;margin: 0 auto;height: 42px;border-radius: 3px;display: block;background: #ffaf2a !important;border: none;text-transform: uppercase;}
+
+
+/********Modal Code End*********/
+
+
+
+
+@media screen and (max-width: 560px) {
+    
+    section.wrapper {height: auto;}
+    .my-custom-scrollbar {height: auto;
+    }
+
+  }
+
+
+  ::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #d8d8d8;
+}
